@@ -9,7 +9,7 @@ import lemonDessertImage from './assets/lemondessert.jpg';
 
 const offers = [
    {
-      name: 'Greek Salad',
+      title: 'Greek Salad',
       image: greekSaladImage,
       price: '$12.99',
       description: `The famous greek salad of crispy lettuce, peppers, olives and 
@@ -18,7 +18,7 @@ const offers = [
       alt: 'Greek Salad'
    },
    {
-      name: 'Bruschetta',
+      title: 'Bruschetta',
       image: bruschettaImage,
       price: '$5.99',
       description: `Our Bruschetta is made from grilled bread that has been 
@@ -26,10 +26,10 @@ const offers = [
       alt: 'Bruchetta'
    },
    {
-     name: 'Lemon Dessert',
-     image: lemonDessertImage,
-     price: '$5.00',
-     description: `This comes straight from grandma's recipe book, every last 
+      title: 'Lemon Dessert',
+      image: lemonDessertImage,
+      price: '$5.00',
+      description: `This comes straight from grandma's recipe book, every last 
        ingredient has been sourced and is as authentic as can be imagined.`,
       alt: 'Lemon Dessert'
    },
@@ -48,19 +48,19 @@ const WeekSpecials = () => {
                title={offers[0].title}
                price={offers[0].price}
                description={offers[0].description}
-               imageUrl={offers[0].imageUrl}
+               image={offers[0].image}
             />
             <Card
                title={offers[1].title}
                price={offers[1].price}
                description={offers[1].description}
-               imageUrl={offers[1].imageUrl}
+               image={offers[1].image}
             />
             <Card
                title={offers[2].title}
                price={offers[2].price}
                description={offers[2].description}
-               imageUrl={offers[2].imageUrl}
+               image={offers[2].image}
             />
          </div>
       </section>

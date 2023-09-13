@@ -1,143 +1,161 @@
 header {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   height: 123px;
-   max-width: 860px;
-   margin: 0 auto;
- }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 123px;
+  max-width: 860px;
+  margin: 0 auto;
+}
 
- @media (min-width: 768px) {
-   header {
-      padding: 0 20px;
-   }
- }
+@media (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+}
 
- .logo {
-   display: flex;
-   flex-direction: row;
-   flex-shrink: 0;
-   width: 202px;
-   height: 76px;
-   margin-top: 21px;
-   margin-bottom: 26px;
- }
+@media (max-width: 576px) {
+  header {
+    padding: 0 20px;
+  }
+}
 
- nav {
-   display: flex;
-   flex-direction: row;
-   flex-shrink: 0;
-   margin-left: 45px;
- }
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 202px;
+  height: 76px;
+  margin-top: 21px;
+  margin-bottom: 26px;
+}
 
- nav ul {
-   display: flex;
-   align-items: center;
-   gap: 28px;
- }
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin-left: 45px;
+}
 
- nav ul li {
-   list-style: none;
-   font-family: 'Karla', sans-serif;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: normal;
-   text-transform: capitalize;
- }
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+}
 
- nav ul li a {
-   text-decoration: none;
-   color: #000;
- }
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
 
- .burger-menu div {
-   position: relative;
-   width: 24px;
-   height: 24px;
- }
+nav ul li {
+  list-style: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
 
- .burger-menu img {
-   position: absolute;
-   top: 0;
-   left: 0;
-   transition: opacity 0.3s ease-in-out;
- }
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
 
- .burger-menu .img-normal {
-   z-index: 1;
- }
+@media (min-width: 1024px) {
+  .burger-menu div {
+    display: none;
+  }
+}
 
- .burger-menu .img-hover {
-   opacity: 0;
-   z-index: 2;
- }
+.burger-menu div {
+position: relative;
+margin-top: 50px;
+width: 24px;
+height: 24px;
+}
 
- .burger-menu:hover .img-normal {
-   opacity: 0;
- }
+.burger-menu img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
- .burger-menu:hover .img-hover {
-   opacity: 1;
- }
+.burger-menu .img-normal {
+  z-index: 1;
+}
 
- /* #region menu */
- .menu {
-   position: fixed;
-   top: 0;
-   right: 0;
-   left: 0;
-   transform: translateX(-100%);
-   transition: transform 500ms ease-in-out;
-   box-sizing: border-box;
-   height: 100vh;
-   padding: 64px 120px;
-   background: #E8EFF9;
- }
+.burger-menu .img-hover {
+  opacity: 0;
+  z-index: 2;
+}
 
- @media (max-width: 1024px) {
-   .menu {
-      padding: 64px 72px;
-   }
- }
+.burger-menu:hover .img-normal {
+  opacity: 0;
+}
 
- @media (max-width: 576px) {
-   .menu {
-      padding: 36px 20px;
-   }
- }
+.burger-menu:hover .img-hover {
+  opacity: 1;
+}
 
- .menu:target {
-   transform: translateX(-0%);
- }
 
- .menu-top {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 64px;
- }
 
- @media (max-width: 576px) {
-   .menu-top {
-      margin-bottom: 36px;
-   }
- }
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms ease-in-out;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background: #E8EFF9;
+}
 
- /* #endregion menu */
- /* #region nav */
- .nav {
-   display: flex;
-   flex-direction: column;
-   gap: 32px;
- }
+@media (max-width: 1024px) {
+  .menu {
+    padding: 64px 72px;
+  }
+}
 
- .nav-link {
-   text-decoration: none;
-   color: #292929;
-   font-size: 22px;
-   font-weight: 700;
-   line-height: 22px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
- }
- /* #endregion nav */
+@media (max-width: 576px) {
+  .menu {
+    padding: 36px 20px;
+  }
+}
+
+.menu:target {
+  transform: translateX(-0%);
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 576px) {
+  .menu-top {
+    margin-bottom: 36px;
+  }
+}
+
+.menu .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu .nav-link {
+  text-decoration: none;
+  color: #292929;
+  line-height: 22px;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
