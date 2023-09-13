@@ -1,0 +1,44 @@
+section.specials {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background: #edefee;
+flex-shrink: 0;
+}
+
+div.specials-title {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 47px 20px 60px 20px;
+}
+
+div.specials-title h1 {
+font-family: 'Markazi Text', serif;
+font-size: 64pt;
+font-weight: 500;
+line-height: 0.5;
+}
+
+div.specials-title button {
+width: 200px;
+height: 60px;
+flex-shrink: 0;
+background: #000000;
+border: none;
+border-radius: 5px;
+font-family: 'Karla', sans-serif;
+color: #ffffff;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+cursor: pointer;
+}
+
+div.specials-cards {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}

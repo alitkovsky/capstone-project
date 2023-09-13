@@ -1,0 +1,63 @@
+article.card {
+flex-basis: 265px;
+border-radius: 16px 16px 0px 0px;
+border: none;
+background: #C4C4C4;
+margin-bottom: 80px;
+}
+
+article.card img {
+width: 265px;
+height: 185px;
+object-fit: cover;
+border-radius: 16px 16px 0px 0px;
+border: none;
+margin-bottom: 20px;
+}
+
+div.card-title {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 20px 20px 20px;
+}
+
+div.card-title h3 {
+font-family: 'Markazi Text', serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 90%;
+}
+
+h3.price {
+color: #EE9972;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+article.card p {
+color: #495E57;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0 20px 20px 20px;
+}
+
+article.card button {
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration: none;
+color: #000000;
+margin: 0 20px 20px 20px;
+border: none;
+background: none;
+}
