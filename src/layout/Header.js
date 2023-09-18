@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useTransition } from 'transition-hook';
 
 import './Header.css';
 import Nav from './Nav';
 
-import burgerMenuIcon from './assets/icons/icon-burger-menu.png';
-import burgerMenuIconHover from './assets/icons/icon-burger-menu-hover.png';
+import burgerMenuIcon from './assets/icons/icon-burger-menu.svg';
+import burgerMenuIconHover from './assets/icons/icon-burger-menu-hover.svg';
 import logo from './assets/Logo.svg';
-import closeIcon from "./assets/icons/icon-close.png";
-import closeIconMobile from "./assets/icons/icon-close-mobile.png";
+import closeIcon from "./assets/icons/icon-close.svg";
 
 const Header = () => {
-   const [menuOpen, setMenuOpen] = useState(false);
+   const [isVisible, setIsVisible] = useState(false);
+   const { stage, shouldMount } = useTransition(isVisible, 500);
+   const toggleMenu = () => setIsVisible(!isVisible);
 
    return (
     <>
@@ -23,52 +25,52 @@ const Header = () => {
             />
          </a>
          <Nav />
-         {menuOpen ? (
-            <div class="menu" id="menu" onClick={() => setMenuOpen(false)}>
-            <div class="menu-top">
+
+         <a href="#menu" className="burger-menu">
+            <div onClick={toggleMenu}>
                <img
-                  src={logo}
-                  alt="Little Lemon Restaurant"
-                  class="logo"
-               />
-               <a href="#home">
-                     <source
-                        media="(max-width: 576px)"
-                        srcset={closeIconMobile} />
-                     <source
-                        media="(max-width: 1024px)"
-                        srcset={closeIcon} />
-                     <img
-                        src={closeIcon}
-                        alt="Close" class="close"
-                     />
-               </a>
-            </div>
-            <div class="nav">
-               <a href="/" class="nav-link">Home</a>
-               <a href="/about" class="nav-link">About</a>
-               <a href="/menu" class="nav-link">Menu</a>
-               <a href="/reservations" class="nav-link">Reservations</a>
-               <a href="/order" class="nav-link">Order Online</a>
-               <a href="/login" class="nav-link">Login</a>
-            </div>
-         </div>
-         ) : (
-            <a href="#menu" class="burger-menu">
-            <div onClick={() => setMenuOpen(true)}>
-               <img
-                  src={burgerMenuIcon}
-                  alt="Burger menu"
-                  class="img-normal"
+                  src={isVisible ? closeIcon : burgerMenuIcon}
+                  alt={isVisible ? 'Close menu' : 'Burger menu'}
+                  className="img-normal"
                />
                <img
-                  src={burgerMenuIconHover}
-                  alt="Burger menu hover"
-                  class="img-hover"
+                  src={isVisible ? closeIcon : burgerMenuIconHover}
+                  alt={isVisible ? 'Close menu' : 'Burger menu'}
+                  className="img-hover"
                />
             </div>
          </a>
-         )}
+
+            <div
+            className="menu"
+            key={shouldMount}
+            style={{
+               transition: '.5s',
+               opacity: stage === 'enter' ? 1 : 0,
+               transform: {
+                 from: 'translateX(-100%)',
+                 enter: 'translateX(0%)',
+                 leave: 'translateX(-100%)',
+               }[stage],
+             }}
+            >
+            <div className="menu-top">
+               <img
+                  src={logo}
+                  alt="Little Lemon Restaurant"
+                  className="logo"
+               />
+            </div>
+            <div className="nav">
+               <a href="/" className="nav-link">Home</a>
+               <a href="/about" className="nav-link">About</a>
+               <a href="/menu" className="nav-link">Menu</a>
+               <a href="/reservations" className="nav-link">Reservations</a>
+               <a href="/order" className="nav-link">Order Online</a>
+               <a href="/login" className="nav-link">Login</a>
+            </div>
+         </div>
+
       </header>
     </>
    );
