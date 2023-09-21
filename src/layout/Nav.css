@@ -1,0 +1,50 @@
+nav {
+grid-column: 3;
+justify-self: end;
+align-self: center;
+}
+
+@media (max-width: 1024px) {
+nav {
+   display: none;
+}
+}
+
+nav ul {
+display: flex;
+align-items: center;
+gap: 28px;
+}
+
+nav ul li {
+list-style: none;
+font-family: 'Karla', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+nav ul li a {
+   position: relative;
+   color: #333;
+   overflow: hidden;
+}
+
+nav ul li a::before {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 2px;
+   bottom: -5px;
+   left: 50%;
+   background-color: #333;
+   transform: translateX(-50%);
+   transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+nav ul li a:hover::before,
+nav ul li a:focus::before {
+   width: 75%;
+}

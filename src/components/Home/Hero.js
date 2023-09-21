@@ -20,9 +20,7 @@ const Hero = (props) => {
                   </button>
                   </div>
                </div>
-               <div className="hero-image">
-                  <img src={src} alt={props.alt} />
-               </div>
+                  <img className="hero-image" src={src} alt={props.alt} />
             </div>
          </section>
       </>

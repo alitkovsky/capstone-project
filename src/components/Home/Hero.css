@@ -1,85 +1,79 @@
 section.hero {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   height: 406px;
-   margin: 0 auto;
-   background: #495e57;
-   flex-shrink: 0;
- }
- 
- div.hero {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 860px;
- }
- 
- @media (min-width: 768px) {
-   div.hero {
-      padding: 0 20px;
-   }
- }
- 
- .hero-description {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 422px;
-   margin-top: 47px;
-   margin-bottom: 28px;
- }
- 
- .hero-description h1 {
-   font-family: 'Markazi Text', serif;
-   font-size: 64pt;
-   font-weight: 500;
-   line-height: 0.5;
- }
- 
- .hero-description h2 {
- font-family: 'Markazi Text', serif;
- font-size: 40pt;
- font-weight: 400;
- line-height: normal;
- }
- 
- .hero-description p {
- 
-   font-family: 'Markazi Text', serif;
-   font-size: 18pt;
-   font-weight: 300;
-   line-height: normal;
- }
- 
- div.button button {
-   width: 200px;
-   height: 60px;
-   flex-shrink: 0;
-   background: #000000;
-   border: none;
-   border-radius: 5px;
-   font-family: 'Karla', sans-serif;
-   color: #ffffff;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: normal;
-   text-transform: capitalize;
-   cursor: pointer;
- }
- 
- .hero-image {
-   width: 375px;
-   height: 325px;
-   margin-top: 23px;
- 
- }
- 
- .hero-image img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 5px;
-   border: none;
- }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 406px;
+  margin: 0 auto;
+  background: #495e57;
+  flex-shrink: 0;
+}
+
+div.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 860px;
+}
+
+@media (min-width: 768px) {
+  div.hero {
+    padding: 0 20px;
+  }
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 422px;
+  margin-top: 47px;
+  margin-bottom: 28px;
+}
+
+.hero-description h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 64pt;
+  font-weight: 500;
+  line-height: 0.5;
+}
+
+.hero-description h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-description p {
+
+  font-family: 'Markazi Text', serif;
+  font-size: 18pt;
+  font-weight: 300;
+  line-height: normal;
+}
+
+div.button button {
+  width: 200px;
+  height: 60px;
+  flex-shrink: 0;
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: -70px;
+  justify-content: ;
+}

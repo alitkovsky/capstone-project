@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Karla', serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495E57;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+   text-decoration: none;
+   color: #495E57;
+}
+
+h1, h2 {
+   line-height: 1;
+   font-family: 'Markazi Text', serif;
+   font-weight: normal;
+}
+
+h1 {
+   font-size: 3.5rem;
+}
+
+h2 {
+   font-size: 2.5rem;
+}
+
+img {
+   max-width: 100%;
+}
+
+.container {
+   max-width: 53.775rem;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.grid {
+   display: grid;
+}
+

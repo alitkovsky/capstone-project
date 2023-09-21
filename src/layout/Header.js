@@ -16,12 +16,11 @@ const Header = () => {
 
    return (
     <>
-       <header>
-         <a href="/">
+       <header className="grid container">
+         <a href="/" className="logo">
             <img
                src={logo}
                alt="Little Lemon Restaurant"
-               className="logo"
             />
          </a>
          <Nav />
@@ -42,17 +41,17 @@ const Header = () => {
          </a>
 
             <div
-            className="menu"
-            key={shouldMount}
-            style={{
-               transition: '.5s',
-               opacity: stage === 'enter' ? 1 : 0,
-               transform: {
-                 from: 'translateX(-100%)',
-                 enter: 'translateX(0%)',
-                 leave: 'translateX(-100%)',
-               }[stage],
-             }}
+               className="menu"
+               key={shouldMount}
+               style={{
+                  transition: '.5s',
+                  opacity: stage === 'enter' ? 1 : 0,
+                  transform: {
+                  from: 'translateX(-100%)',
+                  enter: 'translateX(0%)',
+                  leave: 'translateX(-100%)',
+                  }[stage],
+               }}
             >
             <div className="menu-top">
                <img
@@ -62,12 +61,12 @@ const Header = () => {
                />
             </div>
             <div className="nav">
-               <a href="/" className="nav-link">Home</a>
-               <a href="/about" className="nav-link">About</a>
-               <a href="/menu" className="nav-link">Menu</a>
-               <a href="/reservations" className="nav-link">Reservations</a>
-               <a href="/order" className="nav-link">Order Online</a>
-               <a href="/login" className="nav-link">Login</a>
+               <a href="/">Home</a>
+               <a href="/about">About</a>
+               <a href="/menu">Menu</a>
+               <a href="/reservations">Reservations</a>
+               <a href="/order">Order Online</a>
+               <a href="/login">Login</a>
             </div>
          </div>
 
