@@ -22,8 +22,8 @@ header {
 }
 
 .logo img {
-  width: 202px;
-  height: 76px;
+  width: 12.5rem;
+  height: 4.75rem;
 }
 
 .burger-menu {
@@ -39,8 +39,8 @@ header {
 .burger-menu div {
   transition: opacity 0.3s ease-in-out;
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -54,8 +54,8 @@ header {
   top: 0;
   left: 0;
   transition: opacity 0.3s ease-in-out;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .burger-menu .img-normal {
@@ -76,29 +76,38 @@ header {
 }
 
 .menu {
+  grid-template-rows: repeat(2, 25% 75%);
+  align-items: start;
   left: 0;
   top: 0;
   right: 0;
   position: fixed;
-  box-sizing: border-box;
   height: 100vh;
-  background: #E8EFF9;
-  margin: 0 auto;
-  padding: 0 20px;
+  background: #EDEFEE;
 }
 
 .menu-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 860px;
-  height: 123px;
-  margin: 0 auto;
+  height: 7.7rem;
 }
 
 .menu-top .logo {
-  width: 202px;
-  height: 76px;
-  margin-top: 21px;
-  margin-bottom: 26px;
+  width: 12.5rem;
+  height: 4.75rem;
+}
+
+.menu .nav {
+  align-self: start;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 1.25rem;
+}
+
+.burgerMenuLink {
+  position: relative;
+  color: #495E57;
+  overflow: hidden;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
 }

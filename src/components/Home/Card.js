@@ -17,7 +17,7 @@ const Card = (props) => {
                className="cardImg"
             />
 
-            <div className="card-title grid">
+            <div className="cardTitle grid">
                <h3 className="cardTitleH3">{props.title}</h3>
                <h3 className="price">{props.price}</h3>
             </div>

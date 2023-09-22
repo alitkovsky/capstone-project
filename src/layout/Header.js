@@ -41,7 +41,7 @@ const Header = () => {
          </a>
 
             <div
-               className="menu"
+               className="menu grid"
                key={shouldMount}
                style={{
                   transition: '.5s',
@@ -53,20 +53,20 @@ const Header = () => {
                   }[stage],
                }}
             >
-            <div className="menu-top">
+            <div className="menu-top grid container">
                <img
                   src={logo}
                   alt="Little Lemon Restaurant"
                   className="logo"
                />
             </div>
-            <div className="nav">
-               <a href="/">Home</a>
-               <a href="/about">About</a>
-               <a href="/menu">Menu</a>
-               <a href="/reservations">Reservations</a>
-               <a href="/order">Order Online</a>
-               <a href="/login">Login</a>
+            <div className="nav grid container">
+               <a href="/" className="burgerMenuLink">Home</a>
+               <a href="/about" className="burgerMenuLink">About</a>
+               <a href="/menu" className="burgerMenuLink">Menu</a>
+               <a href="/reservations" className="burgerMenuLink">Reservations</a>
+               <a href="/order" className="burgerMenuLink">Order Online</a>
+               <a href="/login" className="burgerMenuLink">Login</a>
             </div>
          </div>
 

@@ -15,7 +15,7 @@
    border: none;
 }
 
-.card-title {
+.cardTitle {
    grid-template-columns: repeat(2, auto);
    justify-content: space-between;
    margin: 0 1.25rem;
