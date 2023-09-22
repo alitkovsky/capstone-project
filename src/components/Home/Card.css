@@ -1,63 +1,77 @@
-article.card {
-flex-basis: 265px;
-border-radius: 16px 16px 0px 0px;
-border: none;
-background: #C4C4C4;
-margin-bottom: 80px;
+.card {
+   grid-template-rows: repeat(4, auto);
+   row-gap: 1.25rem;
+   min-width: 16.5rem;
+   border-radius: 1rem 1rem 0 0;
+   border: none;
+   background: #EDEFEE;
 }
 
-article.card img {
-width: 265px;
-height: 185px;
-object-fit: cover;
-border-radius: 16px 16px 0px 0px;
-border: none;
-margin-bottom: 20px;
+.cardImg {
+   width: 100%;
+   height: 11.5rem;
+   object-fit: cover;
+   border-radius: 1rem 1rem 0 0;
+   border: none;
 }
 
-div.card-title {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 0 20px 20px 20px;
+.card-title {
+   grid-template-columns: repeat(2, auto);
+   justify-content: space-between;
+   margin: 0 1.25rem;
 }
 
-div.card-title h3 {
-font-family: 'Markazi Text', serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 90%;
+.cardTitleH3 {
+   font-family: 'Markazi Text', serif;
+   color: #000;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 90%;
 }
 
-h3.price {
-color: #EE9972;
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.price {
+   color: #EE9972;
+   font-family: 'Karla', sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
 }
 
-article.card p {
-color: #495E57;
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 0 20px 20px 20px;
+.card p {
+   color: #495E57;
+   font-family: 'Karla', sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin: 0 1.25rem;
 }
 
-article.card button {
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-decoration: none;
-color: #000000;
-margin: 0 20px 20px 20px;
-border: none;
-background: none;
+.cardButton {
+   align-self: end;
+   justify-self: start;
+   position: relative;
+   display: inline-block;
+   font-family: 'Karla', sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   text-decoration: none;
+   color: #333333;
+   margin: 0 1.25rem 1.25rem 1.25rem;
+   border: none;
+   background: none;
+}
+
+.cardButton:hover {
+   color: #F4CE14;
+}
+
+.faMotorcycle {
+   padding-left: 0.5rem;
 }

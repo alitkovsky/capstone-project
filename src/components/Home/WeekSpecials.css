@@ -1,27 +1,25 @@
-section.specials {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-background: #edefee;
-flex-shrink: 0;
+.specials {
+   grid-template-rows: repeat(2, auto);
 }
 
-div.specials-title {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 47px 20px 60px 20px;
+.specialsContainer {
+   margin-top: 5.5rem;
 }
 
-div.specials-title h1 {
-font-family: 'Markazi Text', serif;
-font-size: 64pt;
-font-weight: 500;
-line-height: 0.5;
+.specialsTitle {
+   grid-template-columns: repeat(2, auto);
+   justify-content: space-between;
 }
 
-div.specials-cards {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+.specialsTitle h1 {
+   font-family: 'Markazi Text', serif;
+   line-height: normal;
+   font-weight: 500;
+}
+
+.specialsCards {
+   grid-template-columns: repeat(3, auto);
+   column-gap: 2rem;
+   margin-top: 3.5rem;
+   margin-bottom: 4.75rem;
 }

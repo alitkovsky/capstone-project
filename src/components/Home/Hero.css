@@ -1,11 +1,13 @@
 .hero {
-  height: 25.375rem;
   background: #495e57;
+  height: 23rem;
 }
 
 .heroContainer {
-  grid-template-columns: repeat(2, auto);
-  column-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 3.5rem;
+  padding-top: 2rem;
 
 }
 
@@ -16,9 +18,9 @@
 } */
 
 .heroDescription {
+  grid-column: 1;
   grid-template-rows: repeat(2, 1fr);
   row-gap: 3rem;
-  margin-top: 3rem;
   color: #F4Ce14;
 }
 
@@ -44,9 +46,11 @@
   margin-top: 1rem;
 }
 
-.hero-image {
-  height: 30rem;
-  margin-top: 1.5rem;
+.heroImage {
+  grid-column: 2;
+  width: 25rem;
+  justify-self: end;
+  height: 24rem;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
 }

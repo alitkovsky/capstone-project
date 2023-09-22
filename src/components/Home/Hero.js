@@ -6,7 +6,7 @@ const Hero = (props) => {
    const { src } = props;
    return (
       <>
-         <section className="hero grid">
+         <section className="hero">
             <div className="heroContainer grid container">
                <div className="heroDescription grid">
 
@@ -20,8 +20,8 @@ const Hero = (props) => {
                      Reserve Table
                   </button>
                </div>
-               
-                  <img className="hero-image" src={src} alt={props.alt} />
+
+               <img className="heroImage" src={src} alt={props.alt} />
             </div>
          </section>
       </>

@@ -14,7 +14,8 @@ const Home = () => {
          <Hero
             title='Little Lemon'
             subtitle='Chicago'
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl id aliquam ultricies, nunc sapien ultricies nunc, vitae ultricies nisl nunc vitae nisl.'
+            description='We are a family owned Mediterranean restaurant,
+            focused on traditional recipes served with a modern twist.'
             src={heroImgUrl}
             alt='Little Lemon Restaurant Food'
          />
