@@ -28,7 +28,7 @@ text-transform: capitalize;
 
 nav ul li a {
    position: relative;
-   color: #333;
+   color: #495E57;
    overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ nav ul li a::before {
    height: 2px;
    bottom: -5px;
    left: 50%;
-   background-color: #333;
+   background-color: #F4CE14;
    transform: translateX(-50%);
    transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 }
@@ -47,4 +47,5 @@ nav ul li a::before {
 nav ul li a:hover::before,
 nav ul li a:focus::before {
    width: 75%;
+
 }

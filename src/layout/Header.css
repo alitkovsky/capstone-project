@@ -19,8 +19,6 @@ header {
   grid-column: 1;
   justify-self: start;
   align-self: center;
-  /* margin-top: 21px;
-  margin-bottom: 26px; */
 }
 
 .logo img {
@@ -103,40 +101,4 @@ header {
   height: 76px;
   margin-top: 21px;
   margin-bottom: 26px;
-}
-
-.menu .nav {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding-left: 20px;
-}
-
-.menu .nav a {
-  text-decoration: none;
-  position: relative;
-  color: #333;
-  overflow: hidden;
-  font-family: 'Karla', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.menu .nav a::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background-color: #333;
-  transform: translateX(-50%);
-  transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1);
-}
-
-.menu .nav a:hover::before,
-.menu .nav a:focus::before {
-  width: 75%;
 }

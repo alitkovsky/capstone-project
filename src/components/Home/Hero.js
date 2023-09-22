@@ -14,11 +14,10 @@ const Hero = (props) => {
                   <h2>{props.subtitle}</h2>
                   <p>{props.description}</p>
                   </div>
-                  <div className="button">
+
                   <button>
                      Reserve Table
                   </button>
-                  </div>
                </div>
                   <img className="hero-image" src={src} alt={props.alt} />
             </div>

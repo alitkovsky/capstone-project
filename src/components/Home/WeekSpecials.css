@@ -20,23 +20,6 @@ font-weight: 500;
 line-height: 0.5;
 }
 
-div.specials-title button {
-width: 200px;
-height: 60px;
-flex-shrink: 0;
-background: #000000;
-border: none;
-border-radius: 5px;
-font-family: 'Karla', sans-serif;
-color: #ffffff;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: capitalize;
-cursor: pointer;
-}
-
 div.specials-cards {
 display: flex;
 flex-direction: row;

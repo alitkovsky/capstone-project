@@ -41,6 +41,31 @@ footer h3 {
    list-style: none;
 }
 
+.footerLink {
+   position: relative;
+   display: inline-block;
+   line-height: 1.5;
+   text-decoration: none;
+}
+
+.footerLink::before {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 1px;
+   bottom: 0;
+   left: 50%;
+   border-color: #F4CE14;
+   background-color: #F4CE14;
+   transform: translateX(-50%);
+   transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1), left 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.footerLink:hover::before,
+.footerLink:focus::before {
+   width: 100%;
+}
+
 .footerContact {
    justify-self: start;
 }

@@ -37,11 +37,11 @@ const contacts = [
    },
    {
       name: 'phone',
-      data: '555-555-5555'
+      data: <a href="tel:555-555-5555" className="footerLink">555-555-5555</a>
    },
    {
       name: 'email',
-      data: 'info@littlelemon.com'
+      data: <a href="mailto:info@littlelemon.com" className="footerLink">info@littlelemon.com</a>
    }
 ];
 
@@ -64,12 +64,12 @@ const Footer = () => {
                   <div className="footerNav">
                      <h3>Site map</h3>
                      <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/menu">Menu</a></li>
-                        <li><a href="/reservations">Reservations</a></li>
-                        <li><a href="/order">Order Online</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="/" className="footerLink">Home</a></li>
+                        <li><a href="/about" className="footerLink">About</a></li>
+                        <li><a href="/menu" className="footerLink">Menu</a></li>
+                        <li><a href="/reservations" className="footerLink">Reservations</a></li>
+                        <li><a href="/order" className="footerLink">Order Online</a></li>
+                        <li><a href="/login" className="footerLink">Login</a></li>
                      </ul>
                   </div>
 
@@ -88,7 +88,7 @@ const Footer = () => {
                      <h3>Follow us</h3>
                      <div className="socialIcons grid">
                         {socials.map((social, index) =>
-                           <a key={index} href={social.url}>
+                           <a key={index} href={social.url} className="socialLink">
                               {social.icon}
                            </a>
                         )}
