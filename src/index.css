@@ -49,7 +49,7 @@ button {
    flex-shrink: 0;
    background: #000000;
    border: none;
-   border-radius: 5px;
+   border-radius: 1rem;
    font-family: 'Karla', sans-serif;
    color: #ffffff;
    font-size: 20px;
