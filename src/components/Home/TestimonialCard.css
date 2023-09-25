@@ -1,0 +1,65 @@
+.testimonialCard {
+   grid-template-rows: repeat(3, auto);
+   justify-content:center;
+   align-items: center;
+   row-gap: 1.25rem;
+   background: #FFFFFF;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+
+.testimonialCardHeader {
+   grid-template-columns: repeat(3, auto);
+   justify-content: start;
+   align-items: center;
+   column-gap: 0.5rem;
+}
+
+.testimonialCardImg {
+   width: 3.75rem;
+   object-fit: cover;
+   border-radius: 50%;
+   border: none;
+}
+
+.testimonialCardName {
+   grid-template-rows: repeat(2, auto);
+}
+
+.testimonialCardName h3 {
+   font-family: 'Markazi Text', serif;
+   color: #000;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 90%;
+}
+
+.testimonialRating {
+   padding-top: 1.2rem;
+   justify-self: end;
+   color: #EE9972;
+   font-family: 'Karla', sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+
+.testimonialSlogan {
+   color: #000;
+   font-family: 'Markazi Text', serif;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 90%;
+}
+
+.testimonialCard p {
+   color: #495E57;
+   font-family: 'Karla', sans-serif;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
