@@ -1,0 +1,68 @@
+.about {
+   background: #fff;
+}
+
+.aboutContainer {
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: space-between;
+   align-content: start;
+   column-gap: 3rem;
+   padding-top: 5.5rem;
+}
+
+.aboutDescription {
+   grid-template-rows: repeat(3, auto);
+   row-gap: 0;
+   align-self: start;
+}
+
+.aboutDescription h1 {
+   font-family: 'Markazi Text', serif;
+   font-size: 4rem;
+   line-height: normal;
+   font-weight: 500;
+   color: #000;
+}
+
+.aboutDescription h2 {
+   font-family: 'Markazi Text', serif;
+   font-size: 2.5rem;
+   font-weight: 400;
+   line-height: normal;
+   color: #333;
+}
+
+.aboutDescription p {
+   text-align: justify;
+   font-family: 'Karla', serif;
+   font-size: 1.25rem;
+   font-weight: 700;
+   line-height: normal;
+   margin-top: 1rem;
+   color: #000;
+}
+
+.aboutImageContainer {
+   position: relative;
+   overflow: hidden;
+   height: 29rem;
+}
+
+.aboutImage {
+   position: absolute;
+   top:0;
+   left:0;
+   height: 21rem;
+   width: 15rem;
+   object-fit: cover;
+   padding-top: 6rem;
+}
+
+.imageOverlay {
+   position: absolute;
+   width: 15rem;
+   height: 21rem;
+   object-fit: cover;
+   top: 0;
+   right: 0;
+}

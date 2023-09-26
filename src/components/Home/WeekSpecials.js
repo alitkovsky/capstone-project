@@ -12,8 +12,8 @@ const offers = [
       title: 'Greek Salad',
       image: greekSaladImage,
       price: '$12.99',
-      description: `The famous greek salad of crispy lettuce, peppers, olives and 
-       our Chicago style feta cheese, garnished with crunchy garlic and rosemary 
+      description: `The famous greek salad of crispy lettuce, peppers, olives and
+       our Chicago style feta cheese, garnished with crunchy garlic and rosemary
        croutons.`,
       alt: 'Greek Salad'
    },
@@ -21,7 +21,7 @@ const offers = [
       title: 'Bruschetta',
       image: bruschettaImage,
       price: '$5.99',
-      description: `Our Bruschetta is made from grilled bread that has been 
+      description: `Our Bruschetta is made from grilled bread that has been
        smeared with garlic and seasoned with salt and olive oil.`,
       alt: 'Bruchetta'
    },
@@ -29,7 +29,7 @@ const offers = [
       title: 'Lemon Dessert',
       image: lemonDessertImage,
       price: '$5.00',
-      description: `This comes straight from grandma's recipe book, every last 
+      description: `This comes straight from grandma's recipe book, every last
        ingredient has been sourced and is as authentic as can be imagined.`,
       alt: 'Lemon Dessert'
    },

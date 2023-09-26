@@ -4,6 +4,7 @@ import './Hero.css';
 
 const Hero = (props) => {
    const { src } = props;
+   
    return (
       <>
          <section className="hero">

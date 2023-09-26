@@ -38,6 +38,10 @@ h2 {
    font-size: 2.5rem;
 }
 
+h3 {
+   font-size: 1.5rem;
+}
+
 img {
    max-width: 100%;
 }
@@ -66,7 +70,7 @@ button:hover {
 }
 
 .container {
-   max-width: 53.775rem;
+   max-width: 53.75rem;
    width: 90%;
    margin-left: auto;
    margin-right: auto;
