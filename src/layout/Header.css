@@ -1,33 +1,22 @@
 header {
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   min-height: 7.7rem;
+  padding-top: auto;
 }
 
-/* @media (max-width: 1024px) {
-  header {
-
-  }
-}
-
-@media (max-width: 576px) {
-  header {
-
-  }
-} */
-
-.logo {
+.logoContainer {
   grid-column: 1;
   justify-self: start;
+  max-width: 12.5rem;
+  margin-top: auto;
+}
+
+.logo {
   align-self: center;
 }
 
-.logo img {
-  width: 12.5rem;
-  height: 4.75rem;
-}
-
 .burger-menu {
-  grid-column: 3;
+  grid-column: 2;
   justify-self: end;
   align-self: center;
 }
@@ -41,12 +30,6 @@ header {
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
-}
-
-@media (min-width: 1024px) {
-  .burger-menu div {
-    display: none;
-  }
 }
 
 .burger-menu img {
@@ -87,12 +70,12 @@ header {
 }
 
 .menu-top {
-  height: 7.7rem;
+  min-height: 7.7rem;
 }
 
 .menu-top .logo {
-  width: 12.5rem;
-  height: 4.75rem;
+  max-width: 12.5rem;
+  height: auto;
 }
 
 .menu .nav {
@@ -110,4 +93,20 @@ header {
   font-style: normal;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+/* Small devices (landscape phones, less than 600px) */
+@media (max-width: 37.5rem) {
+  header {
+    grid-template-columns: repeat(2, auto);
+    min-height: 4.375rem;
+    align-items: center;
+  }
+}
+
+/* Medium devices (tablets, less than 900px) */
+@media (min-width: 56.25rem) {
+  .burger-menu div {
+    display: none;
+  }
 }

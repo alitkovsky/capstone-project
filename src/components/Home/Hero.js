@@ -4,11 +4,11 @@ import './Hero.css';
 
 const Hero = (props) => {
    const { src } = props;
-   
+
    return (
       <>
          <section className="hero">
-            <div className="heroContainer grid container">
+            <div className="heroContainer grid">
                <div className="heroDescription grid">
 
                   <div className="text">
@@ -22,7 +22,10 @@ const Hero = (props) => {
                   </button>
                </div>
 
-               <img className="heroImage" src={src} alt={props.alt} />
+               <div>
+                  <img className="heroImage" src={src} alt={props.alt} />
+               </div>
+
             </div>
          </section>
       </>

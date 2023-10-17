@@ -1,13 +1,7 @@
 nav {
-grid-column: 3;
+grid-column: 2;
 justify-self: end;
 align-self: center;
-}
-
-@media (max-width: 1024px) {
-nav {
-   display: none;
-}
 }
 
 nav ul {
@@ -47,5 +41,22 @@ nav ul li a::before {
 nav ul li a:hover::before,
 nav ul li a:focus::before {
    width: 75%;
+
+}
+
+/* Small devices (landscape phones, less than 600px) */
+@media (max-width: 37.5rem) {
+
+}
+
+/* Medium devices (tablets, less than 900px) */
+@media (max-width: 56.25rem) {
+   nav {
+      display: none;
+   }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 75rem) {
 
 }

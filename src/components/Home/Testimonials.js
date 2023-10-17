@@ -47,7 +47,6 @@ const Testimonials = () => {
                   {testimonials.map((testimonial, index) => (
                      <TestimonialCard
                         key={index}
-                        // className={index === 1 ? 'middle-card' : ''}
                         name={testimonial.name}
                         lastName={testimonial.lastName}
                         rating={testimonial.rating}

@@ -5,6 +5,7 @@ import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free
 
 import './Footer.css';
 import logoFooter from './assets/logo-footer.png';
+import logoFooterMobile from'./assets/logo-footer-thin.png';
 
 const instagram = <FontAwesomeIcon icon={faInstagram} size="xl" />;
 const facebook = <FontAwesomeIcon icon={faFacebook} size="xl" />;
@@ -51,16 +52,32 @@ const Footer = () => {
    return (
       <>
          <footer className="grid">
-            <div className="grid container footerContainer">
-               <div className="footerLogo">
+            <div className="footerContainer grid container">
+               <div className="footerLogoContainer grid">
                   <a href="/">
                      <img
                         src={logoFooter}
-                        alt="Little Lemon Restaurant"
+                        className="footerLogo"
+                        alt="Little Lemon logo"
+                     />
+                     <img
+                        src={logoFooterMobile}
+                        className="footerLogoMobile"
+                        alt="Little Lemon logo"
                      />
                   </a>
+                  <p className="footerSlogan">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                  <div className="socialIconsMobile grid">
+                        {socials.map((social, index) =>
+                           <a key={index} href={social.url} className="socialLink">
+                              {social.icon}
+                           </a>
+                        )}
+                     </div>
                </div>
-               <div className="footerContent grid">
+
+               <div className="footerContentContainer grid">
+
                   <div className="footerNav">
                      <h3>Site map</h3>
                      <ul>
@@ -94,6 +111,7 @@ const Footer = () => {
                         )}
                      </div>
                   </div>
+
                </div>
             </div>
          </footer>

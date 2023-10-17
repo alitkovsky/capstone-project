@@ -6,7 +6,7 @@ import Nav from './Nav';
 
 import burgerMenuIcon from './assets/icons/icon-burger-menu.svg';
 import burgerMenuIconHover from './assets/icons/icon-burger-menu-hover.svg';
-import logo from './assets/Logo.svg';
+import logo from './assets/logo.png';
 import closeIcon from "./assets/icons/icon-close.svg";
 
 const Header = () => {
@@ -17,12 +17,14 @@ const Header = () => {
    return (
     <>
        <header className="grid container">
-         <a href="/" className="logo">
-            <img
-               src={logo}
-               alt="Little Lemon Restaurant"
-            />
+         <div className="logoContainer grid">
+            <a href="/" className="logo">
+               <img
+                  src={logo}
+                  alt="Little Lemon Restaurant"
+               />
          </a>
+         </div>
          <Nav />
 
          <a href="#menu" className="burger-menu">
@@ -54,11 +56,12 @@ const Header = () => {
                }}
             >
             <div className="menu-top grid container">
-               <img
-                  src={logo}
-                  alt="Little Lemon Restaurant"
-                  className="logo"
-               />
+               <a href="/" className="logo">
+                  <img
+                     src={logo}
+                     alt="Little Lemon Restaurant"
+                  />
+               </a>
             </div>
             <div className="nav grid container">
                <a href="/" className="burgerMenuLink">Home</a>

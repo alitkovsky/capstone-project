@@ -1,7 +1,6 @@
 .card {
-   grid-template-rows: repeat(4, auto);
+   grid-template-rows: auto auto 1fr auto;
    row-gap: 1.25rem;
-   min-width: 16.5rem;
    border-radius: 1rem 1rem 0 0;
    border: none;
    background: #EDEFEE;
@@ -24,8 +23,6 @@
 .cardTitleH3 {
    font-family: 'Markazi Text', serif;
    color: #000;
-   text-overflow: ellipsis;
-   white-space: nowrap;
    font-size: 1.5rem;
    font-style: normal;
    font-weight: 500;
@@ -53,9 +50,6 @@
 
 .cardButton {
    align-self: end;
-   justify-self: start;
-   position: relative;
-   display: inline-block;
    font-family: 'Karla', sans-serif;
    font-size: 1rem;
    font-style: normal;
@@ -64,8 +58,6 @@
    text-decoration: none;
    color: #333333;
    margin: 0 1.25rem 1.25rem 1.25rem;
-   border: none;
-   background: none;
 }
 
 .cardButton:hover {

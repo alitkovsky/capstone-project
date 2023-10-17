@@ -48,15 +48,13 @@ img {
 
 button {
    cursor: pointer;
-   width: 200px;
-   height: 60px;
-   flex-shrink: 0;
+   width: auto;
    background: #000000;
    border: none;
    border-radius: 1rem;
    font-family: 'Karla', sans-serif;
    color: #ffffff;
-   font-size: 20px;
+   font-size: 1.25rem;
    font-style: normal;
    font-weight: 500;
    line-height: normal;
@@ -78,4 +76,25 @@ button:hover {
 
 .grid {
    display: grid;
+}
+
+@media (max-width: 37.5rem) {
+   button {
+      cursor: pointer;
+      width: auto;
+      padding: 0.875rem 1.125rem;
+      margin-left: 0;
+      margin-right: auto;
+      background: #000000;
+      border: none;
+      border-radius: 1rem;
+      font-family: 'Karla', sans-serif;
+      color: #ffffff;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      cursor: pointer;
+   }
 }

@@ -26,3 +26,11 @@
    column-gap: 1.25rem;
    margin-top: 4.125rem;
 }
+
+@media (max-width: 37.5rem) {
+   .testimonialsCards {
+      grid-template-columns: 1fr;
+      margin-top: 4.125rem;
+      gap: 1rem;
+   }
+}

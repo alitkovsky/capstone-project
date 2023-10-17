@@ -38,31 +38,22 @@ const offers = [
 const WeekSpecials = () => {
    return (
       <>
-      <section className="specials grid">
-         <div className="specialsContainer grid container">
-            <div className="specialsTitle grid">
+      <section className="specials">
+         <div className="specialsContainer grid">
+            <div className="specialsTitle grid container">
                <h1>This week specials!</h1>
                <button>Online Menu</button>
             </div>
-            <div className="specialsCards grid">
-               <Card
-                  title={offers[0].title}
-                  price={offers[0].price}
-                  description={offers[0].description}
-                  image={offers[0].image}
-               />
-               <Card
-                  title={offers[1].title}
-                  price={offers[1].price}
-                  description={offers[1].description}
-                  image={offers[1].image}
-               />
-               <Card
-                  title={offers[2].title}
-                  price={offers[2].price}
-                  description={offers[2].description}
-                  image={offers[2].image}
-               />
+            <div className="specialsCards grid container">
+               {offers.map((offer, index) => (
+                  <Card
+                     key={index}
+                     title={offer.title}
+                     price={offer.price}
+                     description={offer.description}
+                     image={offer.image}
+                  />
+               ))}
             </div>
          </div>
       </section>
