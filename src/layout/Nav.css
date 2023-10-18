@@ -44,11 +44,6 @@ nav ul li a:focus::before {
 
 }
 
-/* Small devices (landscape phones, less than 600px) */
-@media (max-width: 37.5rem) {
-
-}
-
 /* Medium devices (tablets, less than 900px) */
 @media (max-width: 56.25rem) {
    nav {

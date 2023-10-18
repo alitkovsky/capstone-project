@@ -2,7 +2,7 @@
    background: #fff;
 }
 
-.aboutContainer {
+.about-container {
    grid-template-columns: repeat(2, 1fr);
    justify-content: space-between;
    align-content: start;
@@ -10,13 +10,13 @@
    padding-top: 5.5rem;
 }
 
-.aboutDescription {
+.about-description {
    grid-template-rows: repeat(3, auto);
    row-gap: 0;
    align-self: start;
 }
 
-.aboutDescription h1 {
+.about-description h1 {
    font-family: 'Markazi Text', serif;
    font-size: 4rem;
    line-height: normal;
@@ -24,7 +24,7 @@
    color: #495E57;
 }
 
-.aboutDescription h2 {
+.about-description h2 {
    font-family: 'Markazi Text', serif;
    font-size: 2.5rem;
    font-weight: 400;
@@ -32,7 +32,7 @@
    color: #495E57;
 }
 
-.aboutDescription p {
+.about-description p {
    text-align: justify;
    font-family: 'Karla', serif;
    font-size: 1.25rem;
@@ -42,13 +42,13 @@
    color: #000;
 }
 
-.aboutImageContainer {
+.about-image-container {
    position: relative;
    overflow: hidden;
    min-height: 29rem;
 }
 
-.aboutImage {
+.about-image {
    position: absolute;
    top:0;
    left:0;
@@ -58,7 +58,7 @@
    padding-top: 6rem;
 }
 
-.imageOverlay {
+.image-overlay {
    position: absolute;
    min-width: 15rem;
    min-height: 21rem;
@@ -68,19 +68,19 @@
 }
 
 @media (max-width: 37.5rem) {
-   .aboutContainer {
+   .about-container {
       grid-template-columns: 1fr;
       gap: 2rem;
       padding-top: 1.5rem;
    }
 
-   .aboutImageContainer {
+   .about-image-container {
       position: relative;
       overflow: hidden;
       min-height: 29rem;
    }
 
-   .aboutImage {
+   .about-image {
       position: absolute;
       top: 0;
       left: 10%;
@@ -90,7 +90,7 @@
       padding-top: 6rem;
    }
 
-   .imageOverlay {
+   .image-overlay {
       position: absolute;
       min-width: 15rem;
       min-height: 21rem;

@@ -8,24 +8,24 @@ const About = (props) => {
    return (
       <>
          <section className="about">
-            <div className="aboutContainer grid container">
-               <div className="aboutDescription grid">
+            <div className="about-container grid container">
+               <div className="about-description grid">
                      <h1>{props.title}</h1>
                      <h2>{props.subtitle}</h2>
                      <p>{props.description}</p>
                </div>
 
-               <div className="aboutImageContainer">
-                  <div className="aboutImage">
+               <div className="about-image-container">
+                  <div className="about-image">
                      <img
-                        className="aboutImage"
+                        className="about-image"
                         src={srca}
                         alt={props.alt}
                      />
                   </div>
-                  <div className="imageOverlay">
+                  <div className="image-overlay">
                      <img
-                        className="imageOverlay"
+                        className="image-overlay"
                         src={srcb}
                         alt={props.alt}
                      />

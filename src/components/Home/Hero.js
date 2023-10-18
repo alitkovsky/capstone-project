@@ -8,8 +8,8 @@ const Hero = (props) => {
    return (
       <>
          <section className="hero">
-            <div className="heroContainer grid">
-               <div className="heroDescription grid">
+            <div className="hero-container grid">
+               <div className="hero-description grid">
 
                   <div className="text">
                   <h1>{props.title}</h1>
@@ -23,7 +23,7 @@ const Hero = (props) => {
                </div>
 
                <div>
-                  <img className="heroImage" src={src} alt={props.alt} />
+                  <img className="hero-image" src={src} alt={props.alt} />
                </div>
 
             </div>

@@ -38,11 +38,11 @@ const contacts = [
    },
    {
       name: 'phone',
-      data: <a href="tel:555-555-5555" className="footerLink">555-555-5555</a>
+      data: <a href="tel:555-555-5555" className="footer-link">555-555-5555</a>
    },
    {
       name: 'email',
-      data: <a href="mailto:info@littlelemon.com" className="footerLink">info@littlelemon.com</a>
+      data: <a href="mailto:info@littlelemon.com" className="footer-link">info@littlelemon.com</a>
    }
 ];
 
@@ -52,45 +52,45 @@ const Footer = () => {
    return (
       <>
          <footer className="grid">
-            <div className="footerContainer grid container">
-               <div className="footerLogoContainer grid">
+            <div className="footer-container grid container">
+               <div className="footer-logo-container grid">
                   <a href="/">
                      <img
                         src={logoFooter}
-                        className="footerLogo"
+                        className="footer-logo"
                         alt="Little Lemon logo"
                      />
                      <img
                         src={logoFooterMobile}
-                        className="footerLogoMobile"
+                        className="footer-logo-mobile"
                         alt="Little Lemon logo"
                      />
                   </a>
-                  <p className="footerSlogan">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                  <div className="socialIconsMobile grid">
+                  <p className="footer-slogan">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                  <div className="social-icons-mobile grid">
                         {socials.map((social, index) =>
-                           <a key={index} href={social.url} className="socialLink">
+                           <a key={index} href={social.url} className="social-link">
                               {social.icon}
                            </a>
                         )}
                      </div>
                </div>
 
-               <div className="footerContentContainer grid">
+               <div className="footer-content-container grid">
 
-                  <div className="footerNav">
+                  <div className="footer-nav">
                      <h3>Site map</h3>
-                     <ul>
-                        <li><a href="/" className="footerLink">Home</a></li>
-                        <li><a href="/about" className="footerLink">About</a></li>
-                        <li><a href="/menu" className="footerLink">Menu</a></li>
-                        <li><a href="/reservations" className="footerLink">Reservations</a></li>
-                        <li><a href="/order" className="footerLink">Order Online</a></li>
-                        <li><a href="/login" className="footerLink">Login</a></li>
+                     <ul className="footer-nav-links">
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="/about" >About</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reservations">Reservations</a></li>
+                        <li><a href="/order">Order Online</a></li>
+                        <li><a href="/login">Login</a></li>
                      </ul>
                   </div>
 
-                  <div className="footerContact">
+                  <div className="footer-contact">
                      <h3>Contact us</h3>
                         <address>
                            {contacts.map((contact, index) =>
@@ -101,11 +101,11 @@ const Footer = () => {
                         </address>
                   </div>
 
-                  <div className="footerSocial">
+                  <div className="footer-social">
                      <h3>Follow us</h3>
-                     <div className="socialIcons grid">
+                     <div className="social-icons grid">
                         {socials.map((social, index) =>
-                           <a key={index} href={social.url} className="socialLink">
+                           <a key={index} href={social.url} className="social-link">
                               {social.icon}
                            </a>
                         )}

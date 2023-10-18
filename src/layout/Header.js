@@ -17,7 +17,7 @@ const Header = () => {
    return (
     <>
        <header className="grid container">
-         <div className="logoContainer grid">
+         <div className="logo-container grid">
             <a href="/" className="logo">
                <img
                   src={logo}
@@ -64,12 +64,12 @@ const Header = () => {
                </a>
             </div>
             <div className="nav grid container">
-               <a href="/" className="burgerMenuLink">Home</a>
-               <a href="/about" className="burgerMenuLink">About</a>
-               <a href="/menu" className="burgerMenuLink">Menu</a>
-               <a href="/reservations" className="burgerMenuLink">Reservations</a>
-               <a href="/order" className="burgerMenuLink">Order Online</a>
-               <a href="/login" className="burgerMenuLink">Login</a>
+               <a href="/">Home</a>
+               <a href="/about">About</a>
+               <a href="/menu">Menu</a>
+               <a href="/reservation">Reservations</a>
+               <a href="/orde">Order Online</a>
+               <a href="/logi">Login</a>
             </div>
          </div>
 

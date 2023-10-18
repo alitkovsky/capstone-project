@@ -1,32 +1,32 @@
-.heroContainer {
+.hero-container {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   column-gap: 3.5rem;
   padding-top: 2rem;
 }
 
-.heroDescription {
+.hero-description {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 1rem;
   color: #F4Ce14;
   background: #495e57;
 }
 
-.heroDescription h1 {
+.hero-description h1 {
   font-family: 'Markazi Text', serif;
   font-size: 4rem;
   line-height: normal;
   font-weight: 500;
 }
 
-.heroDescription h2 {
+.hero-description h2 {
   font-family: 'Markazi Text', serif;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1rem;
 }
 
-.heroDescription p {
+.hero-description p {
   font-family: 'Karla', serif;
   font-size: 1.25rem;
   font-weight: 400;
@@ -34,7 +34,7 @@
   margin-top: 2rem;
 }
 
-.heroImage {
+.hero-image {
   justify-self: end;
   object-fit: cover;
   border-radius: 1rem;
@@ -42,14 +42,14 @@
 }
 
 @media (max-width: 37.5rem) {
-  .heroContainer {
+  .hero-container {
     grid-template-columns: 1fr;
     padding-top: 1rem;
     justify-content: center;
     column-gap: 0;
   }
 
-  .heroDescription {
+  .hero-description {
     grid-template-rows: 1fr;
     margin-bottom: 0;
     color: #F4Ce14;
@@ -57,9 +57,10 @@
     padding-left: 5%;
     padding-right: 5%;
     min-height: 23rem;
+    padding-top: 1.75rem;
   }
 
-  .heroImage {
+  .hero-image {
     justify-self: start;
     object-fit: cover;
     width: 100%;
@@ -68,6 +69,6 @@
 
   button {
     margin-bottom: 1.75rem;
+    width: 100%;
   }
-
 }

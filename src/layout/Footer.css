@@ -12,34 +12,34 @@ footer h3 {
    margin-bottom: 1rem;
 }
 
-.footerContainer {
+.footer-container {
    grid-template-columns: repeat(4, 1fr);
    justify-content: space-between;
    gap: 1.5rem;
 }
 
-.footerLogo {
+.footer-logo {
    min-width: 10.125rem;
    max-height: 17.4375rem;
    padding-top: 4rem;
 }
 
-.footerNav {
+.footer-nav {
    padding-top: 6rem;
 }
 
-.footerNav ul {
+.footer-nav ul {
    list-style: none;
 }
 
-.footerLink {
+ul.footer-nav-links li a {
    position: relative;
    display: inline-block;
    line-height: 1.5;
    text-decoration: none;
 }
 
-.footerLink::before {
+ul.footer-nav-links li a::before {
    content: '';
    position: absolute;
    width: 0;
@@ -52,73 +52,73 @@ footer h3 {
    transition: width 0.3s cubic-bezier(0.5, 0, 0.5, 1), left 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.footerLink:hover::before,
-.footerLink:focus::before {
+ul.footer-nav-links li a:hover::before,
+ul.footer-nav-links li a:focus::before {
    width: 100%;
 }
 
-.footerContact {
+.footer-contact {
    padding-top: 6rem;
 }
 
-.footerContact address {
+.footer-contact address {
    font-style: normal;
 }
 
-.footerSocial {
+.footer-social {
    padding-top: 6rem;
 }
 
-.socialIcons {
+.social-icons {
    grid-template-columns: repeat(4, 1fr);
    column-gap:1rem;
 }
 
-.socialLink {
+.social-link {
    text-decoration: none;
 }
 
 @media (max-width: 37.5rem) {
-   .footerContainer {
+   .footer-container {
       grid-template-columns: 1fr;
       justify-content: center;
       gap: 1.5rem;
       margin: 3rem 1rem;
    }
 
-   .footerLogoContainer {
+   .footer-logo-container {
       justify-content: center;
       justify-self: center;
       gap: 2rem;
       max-width: 60%;
    }
 
-   .footerLogoContainer a {
+   .footer-logo-container a {
       margin-left: auto;
       margin-right: auto;
    }
 
-   .footerLogoMobile {
+   .footer-logo-mobile {
       height: auto;
       max-width: 12.5rem;
    }
 
-   .footerLogo {
+   .footer-logo {
       display: none;
    }
 
-   .footerSlogan {
+   .footer-slogan {
       justify-self: center;
       text-align: center;
    }
 
-   .socialIconsMobile {
+   .social-icons-mobile {
       grid-template-columns: repeat(4, auto);
       margin-left: 10%;
       margin-right: 10%;
    }
 
-   .footerContentContainer {
+   .footer-content-container {
       grid-template-columns: 1fr 1fr;
       justify-self: center;
       max-width: 60%;
@@ -126,15 +126,15 @@ footer h3 {
       margin-right: auto;
    }
 
-   .footerNav {
+   .footer-nav {
       padding-top: 2rem;
    }
 
-   .footerContact {
+   .footer-contact {
       padding-top: 2rem;
    }
 
-   .footerSocial {
+   .footer-social {
       display: none;
    }
 }

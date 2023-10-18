@@ -4,7 +4,7 @@ header {
   padding-top: auto;
 }
 
-.logoContainer {
+.logo-container {
   grid-column: 1;
   justify-self: start;
   max-width: 12.5rem;
@@ -84,7 +84,7 @@ header {
   row-gap: 1.25rem;
 }
 
-.burgerMenuLink {
+div.nav a {
   position: relative;
   color: #495E57;
   overflow: hidden;

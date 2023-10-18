@@ -38,11 +38,11 @@ const Testimonials = () => {
    return (
       <>
          <section className="testimonials grid">
-            <div className="testimonialsContainer grid container">
-               <div className="testimonialsTitle grid">
+            <div className="testimonials-container grid container">
+               <div className="testimonials-title grid">
                   <h1>What our clients say about us</h1>
                </div>
-               <div className="testimonialsCards grid">
+               <div className="testimonials-cards grid">
 
                   {testimonials.map((testimonial, index) => (
                      <TestimonialCard

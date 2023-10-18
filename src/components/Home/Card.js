@@ -5,7 +5,7 @@ import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 
 import './Card.css';
 
-const deliveryIcon = <FontAwesomeIcon icon={faMotorcycle} size="sm" className="faMotorcycle" />;
+const deliveryIcon = <FontAwesomeIcon icon={faMotorcycle} size="sm" className="fa-motorcycle" />;
 
 const Card = (props) => {
    return (
@@ -14,17 +14,17 @@ const Card = (props) => {
             <img
                src={props.image}
                alt={props.alt}
-               className="cardImg"
+               className="card-img"
             />
 
-            <div className="cardTitle grid">
-               <h3 className="cardTitleH3">{props.title}</h3>
+            <div className="card-title grid">
+               <h3 className="card-title">{props.title}</h3>
                <h3 className="price">{props.price}</h3>
             </div>
 
             <p>{props.description}</p>
 
-            <a href="/" className="cardButton">Order a delivery  {deliveryIcon}</a>
+            <a href="/" className="card-button">Order a delivery  {deliveryIcon}</a>
          </article>
       </>
    )
