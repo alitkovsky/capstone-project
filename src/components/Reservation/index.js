@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { fetchAvailableSlots, submitAPI } from '../../api/fakeAPI';
 
-import BookingForm from './BookingForm';
+import ReservationForm from './ReservationForm';
+import './index.css';
 
 const initialAvailableTimes = [];
 
@@ -14,7 +15,7 @@ const availableTimesReducer = (state, action) => {
    return state;
 };
 
-const BookingPage = () => {
+const ReservationPage = () => {
    const [availableTimes, dispatch] = useReducer(
       availableTimesReducer,
       initialAvailableTimes
@@ -47,16 +48,25 @@ const BookingPage = () => {
 
    return (
       <>
-         <div>
-            <h1>Restaurant Reservations</h1>
-            <BookingForm
-               availableTimes={availableTimes}
-               dispatch={dispatch}
-               submitForm={submitForm}
-            />
+         <section className="reservation grid">
+         <div className="reservation-container grid container">
+            <div className="reservation-description grid">
+                  <h1>Let's reserve a table!</h1>
+                  <h2>Here you can choose available date and time, desired number of guests. And, please, don't forget to choose your occasion!</h2>
+            </div>
+
+            <div className="reservation-form grid">
+               <h1>Reservation</h1>
+               <ReservationForm
+                  availableTimes={availableTimes}
+                  dispatch={dispatch}
+                  submitForm={submitForm}
+               />
+            </div>
          </div>
+         </section>
       </>
    );
 };
 
-export default BookingPage;
+export default ReservationPage;

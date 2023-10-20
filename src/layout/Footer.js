@@ -1,35 +1,10 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import SocialIcons from './SocialIcons';
 
 
 import './Footer.css';
 import logoFooter from './assets/logo-footer.png';
 import logoFooterMobile from'./assets/logo-footer-thin.png';
-
-const instagram = <FontAwesomeIcon icon={faInstagram} size="xl" />;
-const facebook = <FontAwesomeIcon icon={faFacebook} size="xl" />;
-const twitter = <FontAwesomeIcon icon={faTwitter} size="xl" />;
-const youtube = <FontAwesomeIcon icon={faYoutube} size="xl" />;
-
-const socials = [
-   {
-      url: 'https://facebook.com',
-      icon: facebook
-   },
-   {
-      url: 'https://twitter.com',
-      icon: twitter
-   },
-   {
-      url: 'https://instagram.com',
-      icon: instagram
-   },
-   {
-      url: 'https://youtube.com',
-      icon: youtube
-   }
-];
 
 const contacts = [
    {
@@ -46,9 +21,7 @@ const contacts = [
    }
 ];
 
-
 const Footer = () => {
-
    return (
       <>
          <footer className="grid">
@@ -68,12 +41,8 @@ const Footer = () => {
                   </a>
                   <p className="footer-slogan">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                   <div className="social-icons-mobile grid">
-                        {socials.map((social, index) =>
-                           <a key={index} href={social.url} className="social-link">
-                              {social.icon}
-                           </a>
-                        )}
-                     </div>
+                     <SocialIcons />
+                  </div>
                </div>
 
                <div className="footer-content-container grid">
@@ -104,11 +73,7 @@ const Footer = () => {
                   <div className="footer-social">
                      <h3>Follow us</h3>
                      <div className="social-icons grid">
-                        {socials.map((social, index) =>
-                           <a key={index} href={social.url} className="social-link">
-                              {social.icon}
-                           </a>
-                        )}
+                        <SocialIcons />
                      </div>
                   </div>
 

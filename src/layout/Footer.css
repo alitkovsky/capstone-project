@@ -1,4 +1,7 @@
 footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
    min-height: 26.06rem;
    background-color: #495E57;
    color: #ffffff;
@@ -100,6 +103,15 @@ ul.footer-nav-links li a:focus::before {
 }
 
 @media (max-width: 37.5rem) {
+   footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      min-height: 34.06rem;
+      background-color: #495E57;
+      color: #ffffff;
+   }
+
    .footer-container {
       grid-template-columns: 1fr;
       justify-content: center;

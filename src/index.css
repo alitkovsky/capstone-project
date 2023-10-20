@@ -16,6 +16,10 @@ body {
    -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+   padding-bottom: 26.06rem;
+}
+
 a {
    text-decoration: none;
 }
@@ -47,6 +51,9 @@ img {
 }
 
 button {
+   height: 3.75rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
    cursor: pointer;
    width: auto;
    background: #000000;
@@ -79,6 +86,9 @@ button:hover {
 }
 
 @media (max-width: 37.5rem) {
+   main {
+      padding-bottom: 34.06rem;
+   }
    button {
       cursor: pointer;
       width: auto;

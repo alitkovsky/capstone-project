@@ -2,7 +2,7 @@ import React from 'react';
 
 const FormInput = ({ children, label, htmlFor, hasError, errorMessage }) => {
   return (
-    <div className="input-field">
+    <div className="form-field">
       <label htmlFor={htmlFor}>{label}</label>
       {children}
       {hasError && errorMessage ? <p data-testid="error-message">{errorMessage}</p> : null}
