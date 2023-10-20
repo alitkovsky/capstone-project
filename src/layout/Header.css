@@ -1,14 +1,14 @@
 header {
   grid-template-columns: repeat(2, auto);
+  align-content: center;
   min-height: 7.7rem;
-  padding-top: auto;
 }
 
 .logo-container {
-  grid-column: 1;
   justify-self: start;
+  align-self: center;
   max-width: 12.5rem;
-  margin-top: auto;
+  max-height: 4.75rem;
 }
 
 .logo {
@@ -16,7 +16,6 @@ header {
 }
 
 .burger-menu {
-  grid-column: 2;
   justify-self: end;
   align-self: center;
 }
@@ -99,8 +98,8 @@ div.nav a {
 @media (max-width: 37.5rem) {
   header {
     grid-template-columns: repeat(2, auto);
-    min-height: 4.375rem;
-    align-items: center;
+    min-height: 4.75rem;
+    align-content: center;
   }
 }
 

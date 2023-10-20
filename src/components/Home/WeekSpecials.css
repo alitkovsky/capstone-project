@@ -4,13 +4,18 @@
 
 .specials-container {
    grid-template-rows: repeat(2, auto);
-   margin-top: 5.5rem;
 }
 
 .specials-title {
    grid-template-columns: repeat(2, auto);
    justify-content: space-between;
 }
+
+.specials-title button {
+   align-self: end;
+   width: 12.5rem;
+   height: 3.75rem;
+ }
 
 .specials-title h1 {
    align-self: start;

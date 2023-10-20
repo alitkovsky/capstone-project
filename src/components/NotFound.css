@@ -1,8 +1,8 @@
-.underconstruction {
+.notfound {
    background: #D9D9D9;
 }
 
-.underconstruction-container {
+.notfound-container {
    grid-template-columns: repeat(2, 1fr);
    justify-content: space-between;
    align-content: center;
@@ -11,13 +11,13 @@
    padding-top: 0;
 }
 
-.underconstruction-description {
+.notfound-description {
    grid-template-rows: repeat(3, auto);
    row-gap: 0;
    align-self: start;
 }
 
-.underconstruction-description h1 {
+.notfound-description h1 {
    font-family: 'Markazi Text', serif;
    font-size: 4rem;
    line-height: normal;
@@ -25,7 +25,7 @@
    color: #495E57;
 }
 
-.underconstruction-description h2 {
+.notfound-description h2 {
    font-family: 'Markazi Text', serif;
    font-size: 2.5rem;
    font-weight: 400;
@@ -33,7 +33,7 @@
    color: #495E57;
 }
 
-.underconstruction-description p {
+.notfound-description p {
    text-align: justify;
    font-family: 'Karla', serif;
    font-size: 1.25rem;
@@ -43,14 +43,14 @@
    color: #000;
 }
 
-.underconstruction-image {
+.notfound-image {
    min-height: 21rem;
    min-width: 15rem;
    object-fit: cover;
 }
 
 @media (max-width: 37.5rem) {
-   .underconstruction-container {
+   .notfound-container {
       grid-template-columns: 1fr;
       justify-content: space-between;
       align-content: center;
@@ -60,13 +60,13 @@
       padding-bottom: 4.5rem;
    }
 
-   .underconstruction-description {
+   .notfound-description {
       grid-template-rows: repeat(3, auto);
       row-gap: 0;
       align-self: start;
    }
 
-   .underconstruction-description h1 {
+   .notfound-description h1 {
       font-family: 'Markazi Text', serif;
       font-size: 4rem;
       line-height: normal;
@@ -74,7 +74,7 @@
       color: #495E57;
    }
 
-   .underconstruction-description h2 {
+   .notfound-description h2 {
       font-family: 'Markazi Text', serif;
       font-size: 2.5rem;
       font-weight: 400;
@@ -82,7 +82,7 @@
       color: #495E57;
    }
 
-   .underconstruction-description p {
+   .notfound-description p {
       text-align: justify;
       font-family: 'Karla', serif;
       font-size: 1.25rem;
@@ -92,7 +92,7 @@
       color: #000;
    }
 
-   .underconstruction-image {
+   .notfound-image {
       display: none;
    }
 }

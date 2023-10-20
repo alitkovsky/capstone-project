@@ -17,7 +17,6 @@
 .card-title {
    grid-template-columns: repeat(2, auto);
    justify-content: space-between;
-   margin: 0 1.25rem;
 }
 
 .card-title h3 {
@@ -27,9 +26,10 @@
    font-style: normal;
    font-weight: 500;
    line-height: 90%;
+   margin: 0 1.25rem;
 }
 
-.price {
+.price h3 {
    color: #EE9972;
    font-family: 'Karla', sans-serif;
    font-size: 1rem;

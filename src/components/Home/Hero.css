@@ -1,15 +1,19 @@
+.hero {
+  background: #495e57;
+  padding-top: 3rem;
+}
+
 .hero-container {
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  column-gap: 3.5rem;
-  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  margin-bottom: 4.375rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .hero-description {
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 1rem;
   color: #F4Ce14;
-  background: #495e57;
 }
 
 .hero-description h1 {
@@ -34,19 +38,36 @@
   margin-top: 2rem;
 }
 
+.hero-description button {
+  align-self: end;
+  width: 12.5rem;
+  height: 3.75rem;
+  margin-bottom: 2rem;
+}
+
 .hero-image {
   justify-self: end;
   object-fit: cover;
+  width: 100%;
   border-radius: 1rem;
   max-height: 28rem;
+  margin-bottom: -7.375rem;
 }
 
 @media (max-width: 37.5rem) {
+  .hero {
+    background: #495e57;
+    padding-top: 1rem;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
-    padding-top: 1rem;
     justify-content: center;
     column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+    margin-bottom: 11.375rem;
   }
 
   .hero-description {
@@ -67,7 +88,7 @@
     border-radius: 0;
   }
 
-  button {
+  .hero-description button {
     margin-bottom: 1.75rem;
     width: 100%;
   }

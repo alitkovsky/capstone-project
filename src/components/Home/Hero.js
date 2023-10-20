@@ -22,9 +22,11 @@ const Hero = (props) => {
                   </button>
                </div>
 
-               <div>
-                  <img className="hero-image" src={src} alt={props.alt} />
-               </div>
+                  <img
+                     className="hero-image"
+                     src={src}
+                     alt={props.alt}
+                  />
 
             </div>
          </section>

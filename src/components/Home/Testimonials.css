@@ -28,9 +28,13 @@
 }
 
 @media (max-width: 37.5rem) {
+   .testimonials-container {
+      margin-top: 4.625rem;
+   }
+
    .testimonials-cards {
       grid-template-columns: 1fr;
-      margin-top: 4.125rem;
+      margin-top: 2.125rem;
       gap: 1rem;
    }
 }

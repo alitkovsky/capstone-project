@@ -13,15 +13,36 @@ footer h3 {
 }
 
 .footer-container {
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(2, auto);
    justify-content: space-between;
-   gap: 1.5rem;
+   gap: 1rem;
+}
+
+.footer-content-container {
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   justify-self: end;
+   max-width: 90%;
+   margin-left: 0;
+   margin-right: 0;
 }
 
 .footer-logo {
    min-width: 10.125rem;
    max-height: 17.4375rem;
    padding-top: 4rem;
+}
+
+.footer-logo-mobile {
+   display: none;
+}
+
+.footer-slogan {
+   display: none;
+}
+
+.social-icons-mobile {
+   display: none;
 }
 
 .footer-nav {
@@ -99,6 +120,7 @@ ul.footer-nav-links li a:focus::before {
    }
 
    .footer-logo-mobile {
+      display: grid;
       height: auto;
       max-width: 12.5rem;
    }
@@ -108,11 +130,13 @@ ul.footer-nav-links li a:focus::before {
    }
 
    .footer-slogan {
+      display: grid;
       justify-self: center;
       text-align: center;
    }
 
    .social-icons-mobile {
+      display: grid;
       grid-template-columns: repeat(4, auto);
       margin-left: 10%;
       margin-right: 10%;
@@ -120,7 +144,7 @@ ul.footer-nav-links li a:focus::before {
 
    .footer-content-container {
       grid-template-columns: 1fr 1fr;
-      justify-self: center;
+      gap: 0.5rem;
       max-width: 60%;
       margin-left: auto;
       margin-right: auto;
@@ -128,10 +152,12 @@ ul.footer-nav-links li a:focus::before {
 
    .footer-nav {
       padding-top: 2rem;
+      justify-self: start;
    }
 
    .footer-contact {
       padding-top: 2rem;
+      justify-self: end;
    }
 
    .footer-social {
