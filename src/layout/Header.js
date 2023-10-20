@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTransition } from 'transition-hook';
+import { useSpring, animated } from 'react-spring';
 
 import './Header.css';
 import Nav from './Nav';
@@ -11,7 +11,14 @@ import closeIcon from "./assets/icons/icon-close.svg";
 
 const Header = () => {
    const [isVisible, setIsVisible] = useState(false);
-   const { stage, shouldMount } = useTransition(isVisible, 500);
+   const menuAnimation = useSpring({
+      config: {
+         duration: 500,
+      },
+      opacity: isVisible ? 1 : 0,
+      transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
+   });
+
    const toggleMenu = () => setIsVisible(!isVisible);
 
    return (
@@ -42,18 +49,9 @@ const Header = () => {
             </div>
          </a>
 
-            <div
+            <animated.div
                className="menu grid"
-               key={shouldMount}
-               style={{
-                  transition: '.5s',
-                  opacity: stage === 'enter' ? 1 : 0,
-                  transform: {
-                  from: 'translateX(-100%)',
-                  enter: 'translateX(0%)',
-                  leave: 'translateX(-100%)',
-                  }[stage],
-               }}
+               style={menuAnimation}
             >
             <div className="menu-top grid container">
                <a href="/" className="logo">
@@ -71,7 +69,7 @@ const Header = () => {
                <a href="/order">Order Online</a>
                <a href="/login">Login</a>
             </div>
-         </div>
+         </animated.div>
 
       </header>
     </>
