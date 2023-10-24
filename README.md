@@ -1,6 +1,6 @@
 <h2>Little Lemon Restaurant</h2>
 
-<p>This is a minimalist website of a Little family-owned restaurant. The site is built with React and CSS with easy-to-use navigation, reservation form, and mobile-ready layout.</p>
+<p>This is the website of a Little Family-owned Restaurant. The site is built with React and CSS, easy-to-use navigation, a reservation form, and a mobile-ready layout.</p>
 
 <p>The project was built within the Meta Fron-End Developers course.</p>
 
@@ -17,7 +17,7 @@
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='../assets/bose-landing.vercel.app.png?raw=true'/>
+<img src='../assets/restaurant-project-beta.vercel.app_.png?raw=true'/>
 </div>
 
 <br><br>
