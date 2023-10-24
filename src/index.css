@@ -1,0 +1,110 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Karla', serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495E57;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+   padding-bottom: 26.06rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   color: #F4CE14;
+}
+
+h1, h2 {
+   line-height: 1;
+   font-family: 'Markazi Text', serif;
+   font-weight: normal;
+}
+
+h1 {
+   font-size: 3.5rem;
+}
+
+h2 {
+   font-size: 2.5rem;
+}
+
+h3 {
+   font-size: 1.5rem;
+}
+
+img {
+   max-width: 100%;
+}
+
+button {
+   height: 3.75rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   cursor: pointer;
+   width: auto;
+   background: #000000;
+   border: none;
+   border-radius: 1rem;
+   font-family: 'Karla', sans-serif;
+   color: #ffffff;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   text-transform: capitalize;
+   cursor: pointer;
+}
+
+button:hover {
+   background: #F4CE14;
+   color: #495E57;
+}
+
+.container {
+   max-width: 53.75rem;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.grid {
+   display: grid;
+}
+
+@media (max-width: 37.5rem) {
+   main {
+      padding-bottom: 34.06rem;
+   }
+   button {
+      cursor: pointer;
+      width: auto;
+      padding: 0.875rem 1.125rem;
+      margin-left: 0;
+      margin-right: auto;
+      background: #000000;
+      border: none;
+      border-radius: 1rem;
+      font-family: 'Karla', sans-serif;
+      color: #ffffff;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      cursor: pointer;
+   }
+}

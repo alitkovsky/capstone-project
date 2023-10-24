@@ -1,0 +1,129 @@
+.reservation {
+   background: #fff;
+}
+
+.reservation-container {
+   grid-template-columns: 1fr 1fr;
+   justify-content: space-between;
+   align-content: center;
+   min-height: 26rem;
+   gap: 3rem;
+   padding-top: 0;
+}
+
+.reservation-description {
+   grid-template-rows: repeat(3, auto);
+   row-gap: 0;
+   align-self: start;
+}
+
+.reservation-description h1 {
+   font-family: 'Markazi Text', serif;
+   font-size: 4rem;
+   line-height: 3.25rem;
+   font-weight: 500;
+   color: #495E57;
+}
+
+.reservation-description h2 {
+   font-family: 'Markazi Text', serif;
+   font-size: 2.5rem;
+   font-weight: 400;
+   line-height: 2rem;
+   color: #495E57;
+   margin-top: 1.25rem;
+}
+
+.reservation-description p {
+   text-align: justify;
+   font-family: 'Karla', serif;
+   font-size: 1.25rem;
+   font-weight: 700;
+   line-height: normal;
+   margin-top: 2rem;
+   color: #000;
+}
+
+.reservation-form form {
+   display: grid;
+   grid-template-rows: repeat(auto-fit);
+}
+
+.reservation-form input, select {
+   padding: 1.125rem 1rem;
+   margin-bottom: 0;
+   border-radius: 1rem;
+   border: 1px solid var(--neutral-colors-300, #F1F3F7);
+   background: var(--neutral-colors-100, #d9d9d9);
+   box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+   font-family: 'Karla', serif;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #000;
+}
+
+.reservation-form label {
+   font-family: 'Markazi Text', serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #495E57;
+   margin-top: 1rem;
+}
+
+.reservation-form button {
+   cursor: pointer;
+   background: #000000;
+   border-radius: 1rem;
+   font-family: 'Karla', sans-serif;
+   color: #ffffff;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   text-transform: capitalize;
+   cursor: pointer;
+}
+
+@media (max-width: 37.5rem) {
+   .reservation-container {
+      grid-template-columns: 1fr;
+      justify-content: space-between;
+      align-content: center;
+      height: auto;
+      gap: 2rem;
+      padding-top: 2.5rem;
+      padding-bottom: 4.5rem;
+   }
+
+   .reservation-description {
+      grid-template-rows: repeat(3, auto);
+      row-gap: 0;
+      align-self: start;
+   }
+
+   .reservation-description h1 {
+      font-family: 'Markazi Text', serif;
+      font-size: 4rem;
+      line-height: normal;
+      font-weight: 500;
+      color: #495E57;
+   }
+
+   .reservation-description h2 {
+      font-family: 'Markazi Text', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+      color: #495E57;
+   }
+
+   .reservation-description p {
+      text-align: justify;
+      font-family: 'Karla', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 2rem;
+      color: #000;
+   }
+}

@@ -1,0 +1,95 @@
+.hero {
+  background: #495e57;
+  padding-top: 3rem;
+}
+
+.hero-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  margin-bottom: 4.375rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hero-description {
+  grid-template-rows: repeat(2, 1fr);
+  color: #F4Ce14;
+}
+
+.hero-description h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 4rem;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.hero-description h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.hero-description p {
+  font-family: 'Karla', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140.625%;
+  margin-top: 2rem;
+}
+
+.hero-description button {
+  align-self: end;
+  width: 12.5rem;
+  height: 3.75rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  justify-self: end;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+  max-height: 28rem;
+  margin-bottom: -7.375rem;
+}
+
+@media (max-width: 37.5rem) {
+  .hero {
+    background: #495e57;
+    padding-top: 1rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+    margin-bottom: 11.375rem;
+  }
+
+  .hero-description {
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+    color: #F4Ce14;
+    background: #495e57;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 23rem;
+    padding-top: 1.75rem;
+  }
+
+  .hero-image {
+    justify-self: start;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .hero-description button {
+    margin-bottom: 1.75rem;
+    width: 100%;
+  }
+}
