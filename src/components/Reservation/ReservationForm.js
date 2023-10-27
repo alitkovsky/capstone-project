@@ -51,15 +51,18 @@ const ReservationForm = ({ availableTimes, dispatch, submitForm }) => {
                <label htmlFor="res-time">Choose time</label>
                <select
                   id="res-time"
+                  name="res-time"
                   value={selectedTime}
                   onChange={handleTimeChange}
                   aria-labelledby="time-label"
+                  data-testid="reservation-time-option"
                >
                   {availableTimes.map((dateSlot) => (
                      dateSlot.times.map((timeSlot) => (
                         <option
                            key={timeSlot}
                            value={timeSlot}
+                           data-testid="reservation-time-option"
                         >
                            {timeSlot}
                         </option>

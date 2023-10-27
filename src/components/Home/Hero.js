@@ -8,7 +8,7 @@ const Hero = (props) => {
    return (
       <>
          <section className="hero">
-            <div className="hero-container grid">
+            <div className="hero-container container grid">
                <div className="hero-description grid">
 
                   <div className="text">
