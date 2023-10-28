@@ -1,18 +1,13 @@
 header {
   grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
   align-content: center;
-  min-height: 7.7rem;
+  height: 7.7rem;
 }
 
-.logo-container {
-  justify-self: start;
-  align-self: center;
-  max-width: 12.5rem;
-  max-height: 4.75rem;
-}
-
-.logo {
-  align-self: center;
+.logo img {
+  width: 12.5rem;
+  height: auto;
 }
 
 .burger-menu {

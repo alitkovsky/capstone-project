@@ -5,7 +5,7 @@ import "./Nav.css";
 const Nav = () => {
    return (
       <>
-         <nav>
+         <nav className="grid">
             <ul>
                <li><a href="/">Home</a></li>
                <li><a href="/about">About</a></li>

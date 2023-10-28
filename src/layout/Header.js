@@ -24,14 +24,14 @@ const Header = () => {
    return (
     <>
        <header className="grid container">
-         <div className="logo-container grid">
-            <a href="/" className="logo">
-               <img
-                  src={logo}
-                  alt="Little Lemon Restaurant"
-               />
+
+         <a href="/" className="logo">
+            <img
+               src={logo}
+               alt="Little Lemon Restaurant"
+            />
          </a>
-         </div>
+
          <Nav />
 
          <a href="#menu" className="burger-menu">
@@ -49,10 +49,10 @@ const Header = () => {
             </div>
          </a>
 
-            <animated.div
+         <animated.div
                className="menu grid"
                style={menuAnimation}
-            >
+         >
             <div className="menu-top grid container">
                <a href="/" className="logo">
                   <img
