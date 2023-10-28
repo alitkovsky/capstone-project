@@ -56,11 +56,12 @@ button {
    margin-bottom: 2rem;
    cursor: pointer;
    width: auto;
-   background: #000000;
+   /* background: #000000; */
+   background: #F4CE14;
+   color: #495E57;
    border: none;
    border-radius: 1rem;
    font-family: 'Karla', sans-serif;
-   color: #ffffff;
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 500;
@@ -70,8 +71,8 @@ button {
 }
 
 button:hover {
-   background: #F4CE14;
-   color: #495E57;
+   background: #000000;
+   color: #ffffff;
 }
 
 .container {
