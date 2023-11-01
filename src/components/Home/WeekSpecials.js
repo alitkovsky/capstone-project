@@ -39,12 +39,12 @@ const WeekSpecials = () => {
    return (
       <>
       <section className="specials">
-         <div className="specials-container grid">
-            <div className="specials-title grid container">
+         <div className="specials-container container grid">
+            <div className="specials-title grid">
                <h1>This week specials!</h1>
                <button>Online Menu</button>
             </div>
-            <div className="specials-cards grid container">
+            <div className="specials-cards grid">
                {offers.map((offer, index) => (
                   <Card
                      key={index}

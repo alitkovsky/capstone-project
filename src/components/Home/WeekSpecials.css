@@ -1,6 +1,6 @@
 .specials {
    background: #fff;
-   margin-top: 4.375rem;
+   margin-top: 5.5rem;
 }
 
 .specials-container {
@@ -13,7 +13,7 @@
 }
 
 .specials-title button {
-   align-self: end;
+   align-self: start;
    width: 12.5rem;
    height: 3.75rem;
  }
