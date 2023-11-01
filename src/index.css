@@ -10,7 +10,7 @@ html {
 body {
    font-family: 'Karla', serif;
    font-size: 1rem;
-   line-height: 1.5;
+   line-height: 1.5rem;
    color: #495E57;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -29,7 +29,7 @@ a:hover {
 }
 
 h1, h2 {
-   line-height: 1;
+   line-height: 1rem;
    font-family: 'Markazi Text', serif;
    font-weight: normal;
 }
@@ -52,11 +52,8 @@ img {
 
 button {
    height: 3.75rem;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
    cursor: pointer;
    width: auto;
-   /* background: #000000; */
    background: #F4CE14;
    color: #495E57;
    border: none;
