@@ -18,7 +18,7 @@ const Card = (props) => {
             />
 
             <div className="card-title grid">
-               <h3 className="card-title">{props.title}</h3>
+               <h3 className="title">{props.title}</h3>
                <h3 className="price">{props.price}</h3>
             </div>
 
