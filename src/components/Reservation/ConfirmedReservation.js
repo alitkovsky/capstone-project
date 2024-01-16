@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './ConfirmedReservation.css';
+import "./ConfirmedReservation.css";
 
-import confirmedReservationImg from './assets/chefs-mario-and-adrian_a.jpg';
+import confirmedReservationImg from "./assets/chefs-mario-and-adrian_a.jpg";
 
 const ConfirmedReservation = () => {
   const srca = confirmedReservationImg;

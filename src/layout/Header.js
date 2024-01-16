@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
-import './Header.css';
-import Nav from './Nav';
+import "./Header.css";
+import Nav from "./Nav";
 
-import burgerMenuIcon from './assets/icons/icon-burger-menu.svg';
-import burgerMenuIconHover from './assets/icons/icon-burger-menu-hover.svg';
-import logo from './assets/logo.png';
+import burgerMenuIcon from "./assets/icons/icon-burger-menu.svg";
+import burgerMenuIconHover from "./assets/icons/icon-burger-menu-hover.svg";
+import logo from "./assets/logo.png";
 import closeIcon from "./assets/icons/icon-close.svg";
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
          duration: 500,
       },
       opacity: isVisible ? 1 : 0,
-      transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
+      transform: isVisible ? "translateX(0%)" : "translateX(-100%)",
    });
 
    const toggleMenu = () => setIsVisible(!isVisible);
@@ -38,12 +38,12 @@ const Header = () => {
             <div onClick={toggleMenu}>
                <img
                   src={isVisible ? closeIcon : burgerMenuIcon}
-                  alt={isVisible ? 'Close menu' : 'Burger menu'}
+                  alt={isVisible ? "Close menu" : "Burger menu"}
                   className="img-normal"
                />
                <img
                   src={isVisible ? closeIcon : burgerMenuIconHover}
-                  alt={isVisible ? 'Close menu' : 'Burger menu'}
+                  alt={isVisible ? "Close menu" : "Burger menu"}
                   className="img-hover"
                />
             </div>

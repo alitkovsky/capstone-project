@@ -1,15 +1,15 @@
-import React, { useReducer, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useReducer, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { fetchAvailableSlots, submitAPI } from '../../api/fakeAPI';
+import { fetchAvailableSlots, submitAPI } from "../../api/fakeAPI";
 
-import ReservationForm from './ReservationForm';
-import './index.css';
+import ReservationForm from "./ReservationForm";
+import "./index.css";
 
 const initialAvailableTimes = [];
 
 const availableTimesReducer = (state, action) => {
-   if (action.type === 'UPDATE_AVAILABLE_TIMES') {
+   if (action.type === "UPDATE_AVAILABLE_TIMES") {
       return action.payload;
    }
    return state;
@@ -25,12 +25,12 @@ const ReservationPage = () => {
    fetchAvailableSlots()
       .then((slots) => {
          dispatch({
-            type: 'UPDATE_AVAILABLE_TIMES',
+            type: "UPDATE_AVAILABLE_TIMES",
             payload: slots
             });
       })
       .catch((error) => {
-         alert('There was an error fetching available times. Please try again.', error);
+         alert("There was an error fetching available times. Please try again.", error);
       });
    }, []);
 
@@ -40,9 +40,9 @@ const ReservationPage = () => {
       const submitSuccess = await submitAPI(formData);
 
       if (submitSuccess) {
-         navigate('/confirmed');
+         navigate("/confirmed");
       } else {
-         alert('There was an error submitting your booking. Please try again.');
+         alert("There was an error submitting your booking. Please try again.");
       }
    };
 
@@ -51,8 +51,8 @@ const ReservationPage = () => {
          <section className="reservation grid">
          <div className="reservation-container grid container">
             <div className="reservation-description grid">
-                  <h1>Let's reserve a table!</h1>
-                  <h2>Here you can choose available date and time, desired number of guests. And, please, don't forget to choose your occasion!</h2>
+                  <h1>Let"s reserve a table!</h1>
+                  <h2>Here you can choose available date and time, desired number of guests. And, please, don"t forget to choose your occasion!</h2>
             </div>
 
             <div className="reservation-form grid">

@@ -1,6 +1,6 @@
 .testimonial-card {
    grid-template-rows: repeat(3, auto);
-   justify-content:center;
+   justify-content: center;
    align-items: center;
    row-gap: 1.25rem;
    background: #FFFFFF;
@@ -9,21 +9,22 @@
 }
 
 .testimonial-card-header {
-   grid-template-columns: repeat(3, auto);
-   justify-content: start;
+   grid-template-columns: 3.75rem auto auto;
    align-items: center;
-   column-gap: 0.5rem;
+   gap: 0.5rem;
 }
 
 .testimonial-card-img {
-   width: 3.75rem;
+   justify-self: start;
+   min-width: 3.75rem;
    object-fit: cover;
    border-radius: 50%;
    border: none;
 }
 
 .testimonial-card-name {
-   grid-template-rows: repeat(2, auto);
+   grid-template-rows: repeat(2, 1fr);
+   justify-self: start;
 }
 
 .testimonial-card-name h3 {

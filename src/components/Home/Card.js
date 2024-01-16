@@ -1,9 +1,9 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
 
 
-import './Card.css';
+import "./Card.css";
 
 const deliveryIcon = <FontAwesomeIcon icon={faMotorcycle} size="sm" className="fa-motorcycle" />;
 
@@ -27,7 +27,7 @@ const Card = (props) => {
             <a href="/" className="card-button">Order a delivery  {deliveryIcon}</a>
          </article>
       </>
-   )
+   );
 };
 
 export default Card;

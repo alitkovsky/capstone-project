@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import heroImgUrl from './assets/restaurant-food.jpg';
-import aboutImgUrla from './assets/chefs-mario-and-adrian_a.jpg';
-import aboutImgUrlb from './assets/chefs-mario-and-adrian_b.jpg';
+import heroImgUrl from "./assets/restaurant-food.jpg";
+import aboutImgUrla from "./assets/chefs-mario-and-adrian_a.jpg";
+import aboutImgUrlb from "./assets/chefs-mario-and-adrian_b.jpg";
 
 
-import Hero from './Hero';
-import WeekSpecials from './WeekSpecials';
-import Testimonials from './Testimonials';
-import About from './About';
-
+import Hero from "./Hero";
+import WeekSpecials from "./WeekSpecials";
+import Testimonials from "./Testimonials";
+import About from "./About";
 
 const Home = () => {
    return (

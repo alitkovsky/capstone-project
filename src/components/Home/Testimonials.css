@@ -1,15 +1,13 @@
 .testimonials {
-   grid-template-rows: repeat(2, auto);
-   row-gap: 4rem;
    background: #D9D9D9;
+   padding-top: 7.875rem;
 }
 
 .testimonials-container {
-   margin-top: 7.625rem;
+   grid-template-rows: repeat(2, auto);
 }
 
 .testimonials-title {
-   grid-template-columns: auto;
    justify-content: center;
 }
 
@@ -21,10 +19,18 @@
    line-height: normal;
 }
 
+.slick-slide > div {
+   margin: 0 1rem;
+}
+
 .testimonials-cards {
-   grid-template-columns: repeat(3, 1fr);
-   column-gap: 1.25rem;
-   margin-top: 4.125rem;
+   justify-content: center;
+   margin-top: 4rem;
+   margin-bottom: 4.5rem;
+}
+
+@media (max-width: 52.75rem) {
+
 }
 
 @media (max-width: 37.5rem) {
@@ -32,9 +38,9 @@
       margin-top: 4.625rem;
    }
 
-   .testimonials-cards {
+   /* .testimonials-cards {
       grid-template-columns: 1fr;
       margin-top: 2.125rem;
       gap: 1rem;
-   }
+   } */
 }

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './Hero.css';
+import "./Hero.css";
 
 const Hero = (props) => {
    const { src } = props;
@@ -31,7 +31,7 @@ const Hero = (props) => {
             </div>
          </section>
       </>
-   )
+   );
 };
 
 export default Hero;

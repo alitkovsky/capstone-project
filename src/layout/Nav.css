@@ -43,8 +43,8 @@ nav ul li a:focus::before {
 }
 
 /* Medium devices (tablets, less than 900px) */
-@media (max-width: 56.25rem) {
-   nav {
+@media (max-width: 56.24rem) {
+   nav.grid {
       display: none;
    }
 }

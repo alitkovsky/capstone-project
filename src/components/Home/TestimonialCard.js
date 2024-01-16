@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './TestimonialCard.css';
+import "./TestimonialCard.css";
 
 const TestimonialCard = (props) => {
    return (
@@ -25,7 +25,7 @@ const TestimonialCard = (props) => {
             <p>{props.review}</p>
          </article>
       </>
-   )
+   );
 };
 
 export default TestimonialCard;

@@ -53,7 +53,7 @@ header {
 }
 
 .menu {
-  grid-template-rows: repeat(2, 25% 75%);
+  grid-template-rows: repeat(2, 7.7rem 75%);
   align-items: start;
   left: 0;
   top: 0;
@@ -64,10 +64,11 @@ header {
 }
 
 .menu-top {
-  min-height: 7.7rem;
+  height: 7.7rem;
 }
 
 .menu-top .logo {
+  align-self: center;
   max-width: 12.5rem;
   height: auto;
 }

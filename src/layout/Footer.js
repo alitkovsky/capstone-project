@@ -1,22 +1,22 @@
-import React from 'react';
-import SocialIcons from './SocialIcons';
+import React from "react";
+import SocialIcons from "./SocialIcons";
 
 
-import './Footer.css';
-import logoFooter from './assets/logo-footer.png';
-import logoFooterMobile from'./assets/logo-footer-thin.png';
+import "./Footer.css";
+import logoFooter from "./assets/logo-footer.png";
+import logoFooterMobile from"./assets/logo-footer-thin.png";
 
 const contacts = [
    {
-      name: 'address',
-      data: '1234 Main Street Anytown, USA 12345'
+      name: "address",
+      data: "1234 Main Street Anytown, USA 12345"
    },
    {
-      name: 'phone',
+      name: "phone",
       data: <a href="tel:555-555-5555" className="footer-link">555-555-5555</a>
    },
    {
-      name: 'email',
+      name: "email",
       data: <a href="mailto:info@littlelemon.com" className="footer-link">info@littlelemon.com</a>
    }
 ];

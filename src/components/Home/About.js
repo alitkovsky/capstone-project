@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './About.css';
+import "./About.css";
 
 const About = (props) => {
    const { srca, srcb } = props;
@@ -35,7 +35,7 @@ const About = (props) => {
             </div>
          </section>
       </>
-   )
+   );
 };
 
 export default About;
