@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './NotFound.css';
+import "./NotFound.css";
 
-import aboutImgUrla from './Home/assets/chefs-mario-and-adrian_a.jpg';
+import aboutImgUrla from "./Home/assets/chefs-mario-and-adrian_a.jpg";
 
 function NotFound() {
   const srca = aboutImgUrla;
@@ -28,7 +28,7 @@ function NotFound() {
             </div>
          </section>
       </>
-  )
-}
+  );
+};
 
 export default NotFound;

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Layout from './layout/Layout';
-import Home from './components/Home';
-import Reservation from './components/Reservation';
-import ConfirmedReservation from './components/Reservation/ConfirmedReservation';
-import UnderConstruction from './components/UnderConstruction';
-import NotFound from './components/NotFound';
+import Layout from "./layout/Layout";
+import Home from "./components/Home";
+import Reservation from "./components/Reservation";
+import ConfirmedReservation from "./components/Reservation/ConfirmedReservation";
+import UnderConstruction from "./components/UnderConstruction";
+import NotFound from "./components/NotFound";
 
 function App() {
 
@@ -26,6 +26,6 @@ function App() {
       </Layout>
     </>
   );
-}
+};
 
 export default App;
